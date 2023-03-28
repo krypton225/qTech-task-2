@@ -1,0 +1,18 @@
+.btn {
+    width: 100%;
+    padding: 0.7rem 1.7rem;
+    border-radius: 0.6rem;
+    text-align: center;
+
+    &-beige {
+        background-color: $light-beige-color;
+    }
+
+    &-dark-blue {
+        background-color: $dark-blue-color-4;
+    }
+
+    &-border-light {
+        border: 1px solid #8f95a3;
+    }
+}
