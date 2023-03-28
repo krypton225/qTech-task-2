@@ -1,0 +1,88 @@
+.section-title {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+    &__description {
+        font-size: 2.4rem;
+
+        @include breakpoint(mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    .circle {
+        --value-x-y: 1.5rem;
+        --shared: -7.5%;
+
+        @media (max-width: 686px) {
+            display: none;
+        }
+
+        width: var(--value-x-y);
+        height: var(--value-x-y);
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $dark-beige-color;
+
+        &-left {
+            left: var(--shared);
+
+            &::before,
+            &::after {
+                content: "";
+                width: calc(var(--value-x-y) - 0.5rem);
+                height: calc(var(--value-x-y) - 0.5rem);
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $dark-beige-color;
+
+                @media (max-width: 625px) {
+                    content: none;
+                }
+            }
+
+            &::before {
+                left: -100%;
+            }
+
+            &::after {
+                left: -200%;
+            }
+        }
+
+        &-right {
+            right: var(--shared);
+
+            &::before,
+            &::after {
+                content: "";
+                width: calc(var(--value-x-y) - 0.5rem);
+                height: calc(var(--value-x-y) - 0.5rem);
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $dark-beige-color;
+
+                @media (max-width: 625px) {
+                    content: none;
+                }
+            }
+
+            &::before {
+                right: -100%;
+            }
+
+            &::after {
+                right: -200%;
+            }
+        }
+    }
+}
