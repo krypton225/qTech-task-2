@@ -6,6 +6,8 @@
 
     &__description {
         font-size: 2.4rem;
+        font-weight: 700;
+        color: $dark-blue-color-3;
 
         @include breakpoint(mobile) {
             font-size: 2rem;
