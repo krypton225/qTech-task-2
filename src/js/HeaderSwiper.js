@@ -11,7 +11,11 @@ const HeaderSwiper = (function () {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            loop: true
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
         });
     }
 
