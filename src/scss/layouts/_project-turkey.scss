@@ -1,0 +1,171 @@
+.project-turkey {
+    width: 100%;
+    position: relative;
+    background-image: url("../src/assets/images/turkey-pic.webp");
+    box-shadow: inset 0 0 0 200rem $bg-overlay-color;
+    @include reset-bg;
+
+    @media (min-width: 1151px) {
+        padding-top: 5.5rem !important;
+    }
+
+    @media (min-width: 991px) and (max-width: 1150px) {
+        padding: 3rem 0 !important;
+    }
+
+    @media (min-width: 768px) and (max-width: 990px) {
+        padding: 3rem 0;
+    }
+
+    @media (min-width: 577px) and (max-width: 767px) {
+        padding: 3.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+        padding: 3.5rem 0;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .turkey-swiper {
+        margin-top: 8rem;
+        position: relative;
+
+        &-card {
+            --border-rad: 0.7rem;
+            --font-size: 2.1rem;
+
+            width: 100%;
+            min-height: 47rem;
+            border-radius: var(--border-rad);
+            @include flex-between-column;
+            background-color: white;
+            @include prefixing(box-shadow, 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647));
+
+            &__img {
+                width: 100%;
+                height: 35rem;
+                border-radius: var(--border-rad);
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: var(--border-rad);
+                    @include prefixing(object-fit, cover);
+                }
+
+                &-info {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 99;
+
+                    &-price {
+                        padding: 0.7rem 0.8rem 0.7rem 0;
+                        background-color: $light-beige-color;
+                        color: $white-color-1;
+                        font-size: calc(var(--font-size) - 0.2rem);
+                    }
+
+                    &-name {
+                        padding: 1.5rem 0;
+                        text-align: center;
+                        background-color: #3d4a629c;
+                        color: $white-color-1;
+                        font-size: var(--font-size);
+                    }
+                }
+            }
+
+            &-extra {
+                width: 100%;
+                position: absolute;
+                bottom: 5.4%;
+                right: 4%;
+
+                &__list {
+                    width: 100%;
+
+                    &__item {
+                        width: 100%;
+                        text-align: right;
+                        display: grid;
+                        grid-template-columns: 30% 70%;
+                        // @include grid-columns(2);
+
+                        span {
+                            font-size: calc(var(--font-size) - 0.5rem);
+                            font-weight: 700;
+
+                            &:nth-child(1) {
+                                margin-bottom: 0.5rem;
+                                color: $dark-blue-color-3;
+                            }
+
+                            &:nth-child(2) {
+                                color: $gray-color-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-pagination {
+            &-bullet {
+                width: 3rem;
+                height: 0.6rem;
+                background-color: red;
+
+                &-active {
+                    background-color: blue;
+
+                    &-prev {
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-button {
+        &-next-3 {
+            width: 2.5rem;
+            height: 4rem;
+            position: absolute;
+            right: -2%;
+            transform: translateY(-50%);
+            background-image: url("../src/assets/svgs/arrow.svg");
+            @include reset-bg;
+            cursor: pointer;
+            z-index: 999;
+
+            @media (min-width: 1340px) {
+                right: -5%;
+                top: 50%;
+            }
+
+            @media (min-width: 950px) {
+                top: 60%;
+            }
+
+            @media (min-width: 950px) {
+                top: 60%;
+            }
+
+            @media (max-width: 949px) {
+                bottom: 35%;
+            }
+
+            @media (max-width: 820px) {
+                display: none;
+            }
+        }
+    }
+}
