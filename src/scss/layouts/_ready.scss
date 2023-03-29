@@ -1,0 +1,82 @@
+.ready {
+    width: 100%;
+    min-height: 40rem;
+    position: relative;
+    background-image: url("../src/assets/images/footer-pic.webp");
+    @include reset-bg;
+
+    @media (min-width: 1151px) {
+        padding-top: 5.5rem !important;
+    }
+
+    @media (min-width: 991px) and (max-width: 1150px) {
+        padding: 3rem 0 !important;
+    }
+
+    @media (min-width: 768px) and (max-width: 990px) {
+        padding: 3rem 0;
+    }
+
+    @media (min-width: 577px) and (max-width: 767px) {
+        padding: 3.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+        padding: 3.5rem 0;
+    }
+
+    &__content {
+        @include hero-img;
+
+        p {
+            text-align: center;
+            font-size: 3.5rem;
+            color: white;
+        }
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &__contact {
+        min-height: 10rem;
+        position: relative;
+
+        &__content {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -50%;
+            @include grid-columns(3);
+
+            &__item {
+                width: 100%;
+                @include flex-center-row;
+
+                &:nth-child(1),
+                &:nth-child(3) {
+                    background-color: $light-beige-color;
+                }
+
+                &:nth-child(2) {
+                    background-color: $dark-beige-color;
+                }
+
+                &__img {
+                    width: 5.5rem;
+                    height: 5.5rem;
+
+                    img {
+                        width: 75%;
+                        height: 75%;
+                    }
+
+                    img {
+                        @include prefixing(object-fit, cover);
+                    }
+                }
+            }
+        }
+    }
+}
