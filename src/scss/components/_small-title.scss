@@ -1,0 +1,32 @@
+.small-title {
+    &__text {
+        font-size: 2.8rem;
+
+        @include breakpoint(tablet) {
+            font-size: 2.2rem;
+        }
+
+        &.white {
+            color: $white-color-1;
+        }
+
+        &.dark-blue {
+            color: $dark-blue-color-3;
+        }
+    }
+
+    &__line {
+        width: 8rem;
+        height: 0.5rem;
+        margin-top: 1.4rem;
+        display: block;
+
+        &.line-dark-blue {
+            background-color: $dark-blue-color-2;
+        }
+
+        &.line-beige {
+            background-color: $light-beige-color;
+        }
+    }
+}
