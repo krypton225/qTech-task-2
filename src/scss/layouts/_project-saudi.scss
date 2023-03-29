@@ -1,26 +1,47 @@
 .project-saudi {
+    background-color: $white-color-3;
+
     @media (min-width: 1151px) {
-        padding-top: 2.5rem !important;
+        padding-top: 5.5rem !important;
     }
 
     @media (min-width: 991px) and (max-width: 1150px) {
         padding: 3rem 0 !important;
+        @include prefixing(box-shadow, none);
     }
 
     @media only screen and (max-width: 576px) {
-        padding: 0.5rem 0 6.5rem;
+        padding: 0.5rem 0 4.5rem !important;
     }
 
     @media (min-width: 768px) and (max-width: 990px) {
         padding: 3rem 0;
+        @include prefixing(box-shadow, none);
     }
 
     @media (min-width: 577px) and (max-width: 767px) {
         padding: 3.5rem 0;
     }
 
+    @media (max-width: 600px) {
+        padding: 3.5rem 0;
+        @include prefixing(box-shadow, none);
+    }
+
+    @media (max-width: 1382px) {
+        background-color: transparent;
+    }
+
     .container {
         position: relative;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 2.3rem !important;
+
+        @media (max-width: 600px) {
+            padding-bottom: 0 !important;
+        }
     }
 
     .custom-swiper {
@@ -35,7 +56,8 @@
             min-height: 47rem;
             border-radius: var(--border-rad);
             @include flex-between-column;
-            background-color: rgba(243, 243, 243, 0.899);
+            background-color: white;
+            @include prefixing(box-shadow, 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647));
 
             &__img {
                 width: 100%;
@@ -138,7 +160,7 @@
             @include reset-bg;
             cursor: pointer;
             z-index: 999;
-            
+
             @media (min-width: 1340px) {
                 right: -5%;
                 top: 50%;

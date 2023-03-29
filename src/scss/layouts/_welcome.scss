@@ -1,6 +1,7 @@
 .welcome {
     @media (min-width: 1151px) {
-        padding-top: 10rem;
+        padding-top: 10rem !important;
+        padding-bottom: 0;
     }
 
     @media (min-width: 991px) and (max-width: 1150px) {
@@ -25,7 +26,7 @@
         width: 100%;
         // margin-top: 7rem;
         padding-top: 18rem;
-        padding-bottom: 10rem;
+        padding-bottom: 4rem;
         background-image: url("../src/assets/images/program-bg.webp");
         @include reset-bg;
         background-size: 100% auto;
@@ -34,8 +35,15 @@
             padding: 18rem 0 0;
         }
 
-        @include breakpoint(tablet) {
+        @media (min-width: 1000px) {
+            padding-bottom: 10rem;
+        }
+
+        @media (max-width: 1220px) {
             padding: 14rem 0 0;
+        }
+
+        @media (max-width: 1382px) {
             background-image: none;
         }
 
