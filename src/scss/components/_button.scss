@@ -4,12 +4,23 @@
     border-radius: 0.6rem;
     text-align: center;
 
+    &-white {
+        background-color: $white-color-1;
+        color: $light-beige-color;
+    }
+
     &-beige {
         background-color: $light-beige-color;
     }
 
     &-dark-blue {
         background-color: $dark-blue-color-4;
+        color: $white-color-1;
+    }
+
+    &-dark-blue-3 {
+        background-color: $dark-blue-color-3;
+        color: $white-color-1;
     }
 
     &-border-light {
