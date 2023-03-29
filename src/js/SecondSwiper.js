@@ -4,10 +4,6 @@ const SecondSwiper = (function () {
     function fire() {
         new Swiper(".custom-swiper", {
             spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
             grabCursor: true,
             loop: true,
 
@@ -19,9 +15,9 @@ const SecondSwiper = (function () {
 
             // If we need pagination
             pagination: {
-                el: ".custom-swiper-pagination",
+                el: ".swiper-pagination",
                 dynamicBullets: true,
-                clickable: true
+                dynamicMainBullets: 3,
             },
 
             // If we need navigation
@@ -44,10 +40,6 @@ const SecondSwiper = (function () {
                     slidesPerView: 2,
                     spaceBetween: 20
                 },
-                // 768: {
-                //     slidesPerView: 3,
-                //     spaceBetween: 40,
-                // },
                 1024: {
                     slidesPerView: 4,
                     spaceBetween: 20
