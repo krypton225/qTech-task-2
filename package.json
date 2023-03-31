@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "live-server",
+        "build": "postcss dist/styles.css -o dist/style.min.css",
         "watch": "sass --no-source-map --watch src/scss/main.scss dist/styles.css",
         "dev": "webpack --mode development",
         "dev:watch": "webpack --mode development --watch",
@@ -15,6 +16,10 @@
     "author": "Khaled Mohamed",
     "license": "ISC",
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^5.0.0",
+        "cssnano": "^6.0.0",
+        "postcss-cli": "^10.1.0",
+        "purgecss": "^5.0.0",
         "sass": "^1.60.0"
     },
     "dependencies": {
