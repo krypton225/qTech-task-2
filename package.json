@@ -7,7 +7,9 @@
         "start": "live-server",
         "watch": "sass --no-source-map --watch src/scss/main.scss dist/styles.css",
         "dev": "webpack --mode development",
-        "prod": "webpack --mode production"
+        "dev:watch": "webpack --mode development --watch",
+        "prod": "webpack --mode production",
+        "prod:watch": "webpack --mode production --watch"
     },
     "keywords": [],
     "author": "Khaled Mohamed",
