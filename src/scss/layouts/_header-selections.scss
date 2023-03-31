@@ -1,9 +1,10 @@
 .header-bottom {
+    margin-top: -10rem;
+    
     &__selections {
         width: 100%;
         padding: 4rem 6rem;
         margin: 0 auto;
-        margin-top: -10rem;
         @include grid-columns(4);
         gap: 2rem;
         background-color: $dark-blue-color-2;
