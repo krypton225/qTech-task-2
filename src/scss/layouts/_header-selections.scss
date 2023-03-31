@@ -1,0 +1,50 @@
+.header-bottom {
+    &__selections {
+        width: 100%;
+        padding: 4rem 6rem;
+        margin: 0 auto;
+        margin-top: -10rem;
+        @include grid-columns(4);
+        gap: 2rem;
+        background-color: $dark-blue-color-2;
+        z-index: 999;
+
+        @include breakpoint(tablet) {
+            padding: 4rem 2.4rem;
+            @include grid-columns(2);
+        }
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
+
+        & > *:not(:last-child) {
+            width: 100%;
+            padding-block: 0.7rem;
+            padding-inline: 2rem;
+            outline: none;
+            border-color: #58618b;
+            border-radius: 0.3rem;
+            background-color: #3c456e;
+            color: white;
+            font-size: 1.6rem;
+            font-family: $main-font-family;
+            cursor: pointer;
+
+            @include breakpoint(tablet) {
+                padding-inline: 1rem;
+                font-size: 1.3rem;
+            }
+
+            &:focus {
+                outline: none;
+                background-color: #3c456e;
+                color: white;
+            }
+
+            option {
+                cursor: pointer;
+            }
+        }
+    }
+}
