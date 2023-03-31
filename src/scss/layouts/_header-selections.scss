@@ -1,5 +1,9 @@
 .header-bottom {
     margin-top: -10rem;
+
+    @media (max-height: 570px) {
+        margin-top: -6rem;
+    }
     
     &__selections {
         width: 100%;
