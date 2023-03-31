@@ -1,5 +1,6 @@
 .footer {
     width: 100%;
+    position: relative;
     margin-top: 5rem;
     padding-block: 1rem;
     outline: 0.1rem solid #e7e7e7;
@@ -10,6 +11,7 @@
         @include flex-between-row;
 
         @media (max-width: 1200px) {
+            margin: 0 auto;
             flex-direction: column;
         }
 
@@ -136,6 +138,21 @@
                     }
                 }
             }
+        }
+    }
+
+    &__copyright {
+        width: 100%;
+        margin-block: 3rem;
+        font-size: 1.7rem;
+
+        @include breakpoint(tablet) {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        @include breakpoint(mobile) {
+            font-size: 1.1rem;
         }
     }
 }
