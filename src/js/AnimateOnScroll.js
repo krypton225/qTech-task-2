@@ -1,3 +1,5 @@
+import AOS from "aos";
+
 const AnimateOnScroll = (function () {
 
     function animate() {
