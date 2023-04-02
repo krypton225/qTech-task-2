@@ -1,4 +1,6 @@
 .achievements {
+    margin-top: 4rem;
+
     @media (min-width: 1151px) {
         padding-top: 5.5rem !important;
     }
@@ -57,11 +59,11 @@
                 color: $dark-beige-color;
 
                 @include breakpoint(tablet) {
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
                 }
 
                 @include breakpoint(mobile) {
-                    font-size: 1.3rem;
+                    font-size: 1.6rem;
                 }
             }
 
@@ -71,11 +73,11 @@
                 font-weight: 700;
 
                 @include breakpoint(tablet) {
-                    font-size: 1.5rem;
+                    font-size: 2.1rem;
                 }
 
                 @include breakpoint(mobile) {
-                    font-size: 1.3rem;
+                    font-size: 2rem;
                 }
             }
         }
