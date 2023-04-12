@@ -153,24 +153,47 @@ a:active, a:focus {
 
 .btn {
   width: 100%;
+  position: relative;
   padding: 0.7rem 1.7rem;
   border-radius: 0.6rem;
   text-align: center;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
 }
 .btn-white {
   background-color: #fcfcfd;
   color: #cfaf6d;
 }
+.btn-white:hover {
+  background-color: #152546;
+  color: #fcfcfd;
+  transform: translateY(-0.5rem);
+}
 .btn-beige {
   background-color: #cfaf6d;
+}
+.btn-beige:hover {
+  background-color: #152546;
+  color: #fcfcfd;
 }
 .btn-dark-blue {
   background-color: #676f81;
   color: #fcfcfd;
 }
+.btn-dark-blue:hover {
+  background-color: #202b5a;
+}
 .btn-dark-blue-3 {
   background-color: #152546;
   color: #fcfcfd;
+}
+.btn-dark-blue-3:hover {
+  background-color: #fcfcfd;
+  color: #cfaf6d;
+  transform: translateY(-0.5rem);
 }
 .btn-border-light {
   border: 1px solid #8f95a3;

@@ -1,26 +1,49 @@
 .btn {
     width: 100%;
+    position: relative;
     padding: 0.7rem 1.7rem;
     border-radius: 0.6rem;
     text-align: center;
+    @include transition(all, 0.3, ease-in, 0);
 
     &-white {
         background-color: $white-color-1;
         color: $light-beige-color;
+
+        &:hover {
+            background-color: $dark-blue-color-3;
+            color: $white-color-1;
+            transform: translateY(-0.5rem);
+        }
     }
 
     &-beige {
         background-color: $light-beige-color;
+
+        &:hover {
+            background-color: $dark-blue-color-3;
+            color: $white-color-1;
+        }
     }
 
     &-dark-blue {
         background-color: $dark-blue-color-4;
         color: $white-color-1;
+
+        &:hover {
+            background-color: $dark-blue-color-2;
+        }
     }
 
     &-dark-blue-3 {
         background-color: $dark-blue-color-3;
         color: $white-color-1;
+
+        &:hover {
+            background-color: $white-color-1;
+            color: $light-beige-color;
+            transform: translateY(-0.5rem);
+        }
     }
 
     &-border-light {
