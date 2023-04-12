@@ -1,5 +1,5 @@
 import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 
 const AnimateOnScroll = (function () {
 
@@ -17,7 +17,7 @@ const AnimateOnScroll = (function () {
             delay: 0,
             duration: 1200,
             easing: "ease-in-out",
-            once: false,
+            once: true,
             mirror: false,
             anchorPlacement: 'top-bottom',
         });
