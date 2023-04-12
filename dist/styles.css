@@ -1097,6 +1097,7 @@ a:active, a:focus {
   -ms-box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
   -o-box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
   box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
+  cursor: pointer;
 }
 .project-saudi .custom-swiper-card__img {
   width: 100%;
@@ -1286,6 +1287,7 @@ a:active, a:focus {
   -ms-box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
   -o-box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
   box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
+  cursor: pointer;
 }
 .project-turkey .turkey-swiper-card__img {
   width: 100%;
@@ -1502,6 +1504,7 @@ a:active, a:focus {
   -ms-box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
   -o-box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
   box-shadow: 0 0 3.5rem -0.6rem rgba(196, 196, 196, 0.647);
+  cursor: pointer;
 }
 .project-dubai .dubai-swiper-card__img {
   width: 100%;
