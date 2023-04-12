@@ -14,21 +14,26 @@ $navbar-link-font-size: 1.8rem;
         padding-block: 0.4rem;
     }
 
-    &.active {
-        top: 0;
-    }
-
     &-content {
         @include flex-between-row;
 
         &__first {
             width: 100%;
-            display: flex;
+            @include flex-evenly-row;
             flex-grow: 2;
+
+            @include breakpoint(tablet) {
+                justify-content: flex-start;
+            }
+
+            @include breakpoint(large) {
+                justify-content: space-between;
+            }
 
             &__logo {
                 width: 5.5rem;
                 margin-inline-end: 1rem;
+                @include transition(width, 0.4, ease-in-out, 0);
 
                 img {
                     width: 100%;
@@ -75,6 +80,7 @@ $navbar-link-font-size: 1.8rem;
                         margin-inline-start: 1.8rem;
                         font-size: $navbar-link-font-size;
                         color: $white-color-1;
+                        @include transition(all, 0.4, ease-in-out, 0);
 
                         @include breakpoint(tablet) {
                             font-size: 2rem;
@@ -128,6 +134,7 @@ $navbar-link-font-size: 1.8rem;
         &__buttons {
             @include flex-center-column;
             flex-grow: 1;
+            @include transition(all, 0.4, ease-in-out, 0);
 
             @include breakpoint(large) {
                 display: none;
@@ -139,6 +146,7 @@ $navbar-link-font-size: 1.8rem;
                 @include flex-center-row;
                 font-size: calc($navbar-link-font-size - 0.12rem);
                 white-space: nowrap;
+                @include transition(all, 0.4, ease-in-out, 0);
 
                 &:nth-child(1) {
                     margin-bottom: 0.5rem;
@@ -148,6 +156,40 @@ $navbar-link-font-size: 1.8rem;
                     span {
                         margin-right: 1.5rem;
                     }
+                }
+            }
+        }
+    }
+
+    &.active {
+        padding-block: 0.5rem;
+        top: 0;
+        @include prefixing(box-shadow, -0.1rem 0.6rem 1.5rem 0.4rem rgb(143 143 143 / 83%));
+
+        .navbar-content__first {
+            &__logo {
+                width: 4rem;
+            }
+
+            &__list {
+                &__item {
+                    &__link {
+                        font-size: calc($navbar-link-font-size - 0.2rem);
+                    }
+                }
+            }
+        }
+
+        .navbar-content__buttons {
+            a {
+                padding: 0.7rem 1.3rem;
+                font-size: calc($navbar-link-font-size - 0.4rem);
+            }
+
+            &__link:nth-child(2) {
+                span {
+                    // @include fade(hide);
+                    display: none;
                 }
             }
         }

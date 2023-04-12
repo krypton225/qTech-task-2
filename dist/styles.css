@@ -553,9 +553,6 @@ a:active, a:focus {
     padding-block: 0.4rem;
   }
 }
-.navbar.active {
-  top: 0;
-}
 .navbar-content {
   -webkit-display: flex;
   -moz-display: flex;
@@ -575,12 +572,41 @@ a:active, a:focus {
 }
 .navbar-content__first {
   width: 100%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
   display: flex;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  -o-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
   flex-grow: 2;
+}
+@media only screen and (max-width: 992px) {
+  .navbar-content__first {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar-content__first {
+    justify-content: space-between;
+  }
 }
 .navbar-content__first__logo {
   width: 5.5rem;
   margin-inline-end: 1rem;
+  -webkit-transition: width 0.4s ease-in-out 0s;
+  -moz-transition: width 0.4s ease-in-out 0s;
+  -ms-transition: width 0.4s ease-in-out 0s;
+  -o-transition: width 0.4s ease-in-out 0s;
+  transition: width 0.4s ease-in-out 0s;
 }
 .navbar-content__first__logo img {
   width: 100%;
@@ -669,6 +695,11 @@ a:active, a:focus {
   margin-inline-start: 1.8rem;
   font-size: 1.8rem;
   color: #fcfcfd;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 @media only screen and (max-width: 992px) {
   .navbar-content__first__list__item__link {
@@ -743,6 +774,11 @@ a:active, a:focus {
   -o-flex-direction: column;
   flex-direction: column;
   flex-grow: 1;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 @media only screen and (max-width: 1200px) {
   .navbar-content__buttons {
@@ -769,12 +805,39 @@ a:active, a:focus {
   align-items: center;
   font-size: 1.68rem;
   white-space: nowrap;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 .navbar-content__buttons__link:nth-child(1) {
   margin-bottom: 0.5rem;
 }
 .navbar-content__buttons__link:nth-child(2) span {
   margin-right: 1.5rem;
+}
+.navbar.active {
+  padding-block: 0.5rem;
+  top: 0;
+  -webkit-box-shadow: -0.1rem 0.6rem 1.5rem 0.4rem rgba(143, 143, 143, 0.83);
+  -moz-box-shadow: -0.1rem 0.6rem 1.5rem 0.4rem rgba(143, 143, 143, 0.83);
+  -ms-box-shadow: -0.1rem 0.6rem 1.5rem 0.4rem rgba(143, 143, 143, 0.83);
+  -o-box-shadow: -0.1rem 0.6rem 1.5rem 0.4rem rgba(143, 143, 143, 0.83);
+  box-shadow: -0.1rem 0.6rem 1.5rem 0.4rem rgba(143, 143, 143, 0.83);
+}
+.navbar.active .navbar-content__first__logo {
+  width: 4rem;
+}
+.navbar.active .navbar-content__first__list__item__link {
+  font-size: 1.6rem;
+}
+.navbar.active .navbar-content__buttons a {
+  padding: 0.7rem 1.3rem;
+  font-size: 1.4rem;
+}
+.navbar.active .navbar-content__buttons__link:nth-child(2) span {
+  display: none;
 }
 
 @media (min-width: 1151px) {
