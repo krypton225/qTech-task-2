@@ -88,7 +88,7 @@
                     @include transition(all, 0.6, ease-in-out, 0);
 
                     &:hover {
-                        background-color: $white-color-2;
+                        background-color: $dark-blue-color-1;
                     }
 
                     @media (min-width: 993px) {

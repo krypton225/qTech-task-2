@@ -2468,7 +2468,7 @@ a:active, a:focus {
   transition: all 0.6s ease-in-out 0s;
 }
 .footer-content__second__list__item:hover {
-  background-color: #fafafa;
+  background-color: #3d4a62;
 }
 @media (min-width: 993px) {
   .footer-content__second__list__item {
