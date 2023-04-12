@@ -41,9 +41,9 @@
             @include grid-columns(2);
         }
 
-        @include breakpoint(mobile) {
-            @include grid-columns(1);
-        }
+        // @include breakpoint(mobile) {
+        //     @include grid-columns(1);
+        // }
 
         &__item {
             width: 100%;
@@ -51,6 +51,14 @@
             text-align: center;
             @include flex-center-column;
             // background-color: red;
+
+            &__img {
+                min-height: 5.5rem;
+
+                img {
+                    max-width: 100%;
+                }
+            }
 
             &__desc {
                 margin-top: 2.4rem;

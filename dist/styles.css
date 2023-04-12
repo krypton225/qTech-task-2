@@ -1881,12 +1881,6 @@ a:active, a:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 576px) {
-  .achievements__content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .achievements__content__item {
   width: 100%;
   min-height: 20rem;
@@ -1911,6 +1905,12 @@ a:active, a:focus {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
+}
+.achievements__content__item__img {
+  min-height: 5.5rem;
+}
+.achievements__content__item__img img {
+  max-width: 100%;
 }
 .achievements__content__item__desc {
   margin-top: 2.4rem;
