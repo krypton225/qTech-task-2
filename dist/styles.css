@@ -2118,6 +2118,7 @@ a:active, a:focus {
 
 .info {
   width: 100%;
+  position: relative;
 }
 .info__logo {
   margin-top: 5rem;
