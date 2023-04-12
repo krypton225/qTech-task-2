@@ -8,7 +8,7 @@ const ThirdSwiper = (function () {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            grabCursor: true,
+            // grabCursor: true,
             loop: true,
 
             // Enabled autoplay mode

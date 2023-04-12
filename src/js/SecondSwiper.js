@@ -4,7 +4,7 @@ const SecondSwiper = (function () {
     function fire() {
         new Swiper(".custom-swiper", {
             spaceBetween: 30,
-            grabCursor: true,
+            // grabCursor: true,
             loop: true,
 
             // Enabled autoplay mode
