@@ -91,6 +91,11 @@
 
                 &__link {
                     color: black;
+                    @include transition(all, 0.3, ease-in, 0);
+
+                    &:hover {
+                        color: $light-beige-color;
+                    }
 
                     &-desc {
                         width: 100%;

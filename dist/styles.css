@@ -2287,6 +2287,14 @@ a:active, a:focus {
 }
 .info__contacts__content__item__link {
   color: black;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+.info__contacts__content__item__link:hover {
+  color: #cfaf6d;
 }
 .info__contacts__content__item__link-desc {
   width: 100%;
