@@ -75,6 +75,12 @@
                     background-color: $light-beige-color;
                 }
 
+                &:nth-child(2) {
+                    @include breakpoint(tablet) {
+                        display: none;
+                    }
+                }
+
                 &-desc {
                     margin-bottom: 2.8rem;
                     font-size: var(--font-size-description);

@@ -975,6 +975,11 @@ a:active, a:focus {
   padding: 5rem 2.5rem;
   background-color: #cfaf6d;
 }
+@media only screen and (max-width: 992px) {
+  .welcome__program__content__item:nth-child(2) {
+    display: none;
+  }
+}
 .welcome__program__content__item-desc {
   margin-bottom: 2.8rem;
   font-size: var(--font-size-description);
