@@ -53,7 +53,10 @@
             // background-color: red;
 
             &__img {
-                min-height: 5.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 7.5rem;
 
                 img {
                     max-width: 100%;
@@ -61,7 +64,7 @@
             }
 
             &__desc {
-                margin-top: 2.4rem;
+                margin-block: 1.3rem;
                 font-size: 1.8rem;
                 font-weight: 700;
                 color: $dark-beige-color;
@@ -76,7 +79,6 @@
             }
 
             &__number {
-                margin-top: 1.8rem;
                 font-size: 2.2rem;
                 font-weight: 700;
 
