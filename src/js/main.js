@@ -19,11 +19,9 @@ Scroll.setNavToZero();
 
 AnimateOnScroll.on();
 
-// window.addEventListener("scroll", () => {
-//     if (window.scrollY >= document.getElementById("achievements").offsetTop - 100) {
-//         Counter.on(
-//             document.getElementById("achievements"),
-//             document.querySelectorAll(".achievement-counter")
-//         );
-//     }
-// });
+window.addEventListener('scroll', () => {
+    Counter.on(
+        document.getElementById("achievements__content"),
+        document.querySelectorAll(".achievement-counter")
+    );
+}, { once: true });

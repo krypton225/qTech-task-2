@@ -9,15 +9,18 @@ const Counter = (function () {
         }
 
         allItems.forEach((item) => {
-            const countNumber = parseInt(item.dataset.count);
+            const countNumber = parseInt(+item.dataset.count);
 
             const intervalValue = setInterval(() => {
-                item.textContent++;
+                if (window.scrollY >= document.getElementById("achievements").offsetTop - 250) {
+                    item.textContent++;
 
-                if (parseInt(item.textContent) === countNumber) {
-                    clearInterval(intervalValue);
+                    if (parseInt(item.textContent) === countNumber) {
+                        clearInterval(intervalValue);
+                        item.textContent += `+`;
+                    }
                 }
-            }, 100);
+            }, 5);
         });
     }
 
