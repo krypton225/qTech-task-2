@@ -83,7 +83,7 @@
                 width: 100%;
                 min-height: 16rem;
                 position: relative;
-                padding: 1rem 0;
+                padding: 2.5rem 0;
                 @include flex-center-column;
                 color: white;
                 overflow: hidden;
@@ -101,6 +101,10 @@
                         border-top: 0.1rem solid $dark-beige-color;
                         border-bottom: 0.1rem solid $dark-beige-color;
                     }
+                }
+
+                @include breakpoint(tablet) {
+                    min-height: 10rem;
                 }
 
                 &::before {
@@ -124,6 +128,11 @@
                     width: 5.5rem;
                     height: 5.5rem;
 
+                    @include breakpoint(tablet) {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+
                     img {
                         width: 75%;
                         height: 75%;
@@ -137,6 +146,7 @@
 
                     @include breakpoint(tablet) {
                         font-size: 1.9rem;
+                        display: none;
                     }
 
                     @include breakpoint(mobile) {
@@ -149,6 +159,7 @@
 
                     @include breakpoint(tablet) {
                         font-size: 1.5rem;
+                        display: none;
                     }
 
                     @include breakpoint(mobile) {
