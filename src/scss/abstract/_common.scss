@@ -5,26 +5,6 @@ ul {
 section {
     width: 100%;
     padding-block: min(10vh, 10rem);
-
-    // @include breakpoint(mobile) {
-    //     padding: 7.5rem 0 4.5rem;
-    // }
-
-    // @media (min-width: 577px) and (max-width: 767px) {
-    //     padding: 5.5rem 0;
-    // }
-
-    // @media (min-width: 768px) and (max-width: 990px) {
-    //     padding: 7rem 0;
-    // }
-
-    // @media (min-width: 991px) and (max-width: 1150px) {
-    //     padding: 8rem 0;
-    // }
-
-    // @media (min-width: 1151px) {
-    //     padding: 5rem 0;
-    // }
 }
 
 a {
@@ -49,4 +29,92 @@ a {
 
 .disable-scroll {
     overflow-y: hidden;
+}
+
+// * This a section iterating in swiper buttons for 3 sections.
+.main-styles-swiper-button {
+    width: 2.5rem;
+    height: 4rem;
+    position: absolute;
+    // transform: translateY(-50%);
+    background-image: url("../src/assets/svgs/arrow-dark.svg");
+    @include reset-bg;
+    cursor: pointer;
+    z-index: 999;
+    @include transition(all, 0.6, ease-in-out, 0);
+
+    @media (max-width: 1024px) {
+        width: 1.5rem;
+        height: 3rem;
+    }
+}
+
+// * Start with the second swiper because the first is in the header.
+@for $i from 2 through 4 {
+    .swiper-button {
+        $init-top-btn: 50%;
+        $init-side: -1.5%;
+
+        $side-min-1340: -5%;
+
+        $styles-max-1024: (
+            top: auto,
+            bottom: -7.5%,
+        );
+
+        $side-in-mobile: 35% !important;
+
+        &-next-#{$i} {
+            @extend .main-styles-swiper-button;
+
+            @if ($i == 3) {
+                background-image: url("../src/assets/svgs/arrow.svg");
+            }
+
+            right: $init-side;
+            top: $init-top-btn;
+
+            @media (min-width: 1340px) {
+                right: $side-min-1340;
+            }
+
+            @media (max-width: 1024px) {
+                right: 42%;
+                @each $prop, $val in $styles-max-1024 {
+                    #{$prop}: #{$val};
+                }
+            }
+
+            @include breakpoint(mobile) {
+                right: $side-in-mobile;
+            }
+        }
+
+        &-prev-#{$i} {
+            @extend .main-styles-swiper-button;
+
+            @if ($i == 3) {
+                background-image: url("../src/assets/svgs/arrow.svg");
+            }
+
+            top: $init-top-btn;
+            left: $init-side;
+            transform: scale(-1);
+
+            @media (min-width: 1340px) {
+                left: $side-min-1340;
+            }
+
+            @media (max-width: 1024px) {
+                left: 42%;
+                @each $prop, $val in $styles-max-1024 {
+                    #{$prop}: #{$val};
+                }
+            }
+
+            @include breakpoint(mobile) {
+                left: $side-in-mobile;
+            }
+        }
+    }
 }
