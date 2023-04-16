@@ -30,6 +30,8 @@ const Toggler = (function () {
             toggler.addEventListener("click", () => {
                 toggleClassesInLines(allTogglerLines);
                 document.getElementById("navbar-list").classList.toggle("active");
+
+                document.getElementsByTagName('html')[0].classList.toggle("disable-scroll")
             });
         }
     }
@@ -44,6 +46,9 @@ const Toggler = (function () {
                 const allLines = document.querySelectorAll(".toggler__line");
 
                 toggleClassNames(allLines);
+
+                document.body.classList.remove("disable-scroll");
+                document.getElementsByTagName('html')[0].classList.remove("disable-scroll")
             });
         });
     }
