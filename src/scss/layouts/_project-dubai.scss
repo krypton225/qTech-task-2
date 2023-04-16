@@ -1,30 +1,32 @@
 .project-dubai {
+    // padding-block: min(7vh, 10rem);
     background-color: $white-color-3;
+    // padding-bottom: 0;
 
     @media (min-width: 1151px) {
-        padding-top: 5.5rem !important;
+        // padding-top: 5.5rem !important;
     }
 
     @media (min-width: 991px) and (max-width: 1150px) {
-        padding: 3rem 0 !important;
+        // padding: 3rem 0 !important;
         @include prefixing(box-shadow, none);
     }
 
     @media only screen and (max-width: 576px) {
-        padding: 3.5rem 0 4.5rem !important;
+        // padding: 3.5rem 0 4.5rem !important;
     }
 
     @media (min-width: 768px) and (max-width: 990px) {
-        padding: 3rem 0;
+        // padding: 3rem 0;
         @include prefixing(box-shadow, none);
     }
 
     @media (min-width: 577px) and (max-width: 767px) {
-        padding: 3.5rem 0;
+        // padding: 3.5rem 0;
     }
 
     @media (max-width: 600px) {
-        padding: 3.5rem 0;
+        // padding: 3.5rem 0;
         @include prefixing(box-shadow, none);
     }
 

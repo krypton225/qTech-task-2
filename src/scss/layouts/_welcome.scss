@@ -1,12 +1,15 @@
 .welcome {
-    @media (min-width: 1151px) {
-        padding-top: 10rem !important;
-        padding-bottom: 0;
-    }
+    // padding-block: min(10vh, 10rem);
+    padding-bottom: 0;
 
-    @media (min-width: 991px) and (max-width: 1150px) {
-        padding: 8rem 0 4rem;
-    }
+    // @media (min-width: 1151px) {
+    //     padding-top: 10rem !important;
+    //     padding-bottom: 0;
+    // }
+
+    // @media (min-width: 991px) and (max-width: 1150px) {
+    //     padding: 8rem 0 4rem;
+    // }
 
     @include breakpoint(mobile) {
         margin-top: 6rem;
@@ -29,22 +32,23 @@
     &__program {
         width: 100%;
         // margin-top: 7rem;
-        padding-top: 18rem;
-        padding-bottom: 4rem;
+        // padding-top: 18rem;
+        // padding-bottom: 4rem;
+        margin-top: 15rem;
         background-image: url("../src/assets/images/program-bg.webp");
         @include reset-bg;
         background-size: 100% auto;
 
         @media (min-width: 991px) and (max-width: 1150px) {
-            padding: 18rem 0 0;
+            // padding: 18rem 0 0;
         }
 
         @media (min-width: 1000px) {
-            padding-bottom: 10rem;
+            // padding-bottom: 10rem;
         }
 
         @media (max-width: 1220px) {
-            padding: 14rem 0 0;
+            // padding: 14rem 0 0;
         }
 
         @media (max-width: 1382px) {

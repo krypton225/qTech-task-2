@@ -4,26 +4,27 @@ ul {
 
 section {
     width: 100%;
+    padding-block: min(10vh, 10rem);
 
-    @include breakpoint(mobile) {
-        padding: 7.5rem 0 4.5rem;
-    }
+    // @include breakpoint(mobile) {
+    //     padding: 7.5rem 0 4.5rem;
+    // }
 
-    @media (min-width: 577px) and (max-width: 767px) {
-        padding: 5.5rem 0;
-    }
+    // @media (min-width: 577px) and (max-width: 767px) {
+    //     padding: 5.5rem 0;
+    // }
 
-    @media (min-width: 768px) and (max-width: 990px) {
-        padding: 7rem 0;
-    }
+    // @media (min-width: 768px) and (max-width: 990px) {
+    //     padding: 7rem 0;
+    // }
 
-    @media (min-width: 991px) and (max-width: 1150px) {
-        padding: 8rem 0;
-    }
+    // @media (min-width: 991px) and (max-width: 1150px) {
+    //     padding: 8rem 0;
+    // }
 
-    @media (min-width: 1151px) {
-        padding: 5rem 0;
-    }
+    // @media (min-width: 1151px) {
+    //     padding: 5rem 0;
+    // }
 }
 
 a {

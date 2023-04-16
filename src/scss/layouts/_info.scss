@@ -1,5 +1,6 @@
 .info {
     width: 100%;
+    // padding-block: min(5vh, 10rem);
 
     &__logo {
         margin-top: 5rem;
@@ -107,7 +108,7 @@
                         }
 
                         @include breakpoint(mobile) {
-                            font-size: 1.55rem;
+                            font-size: 1.45rem;
                         }
                     }
                 }

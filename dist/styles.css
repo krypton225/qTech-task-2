@@ -93,31 +93,7 @@ ul {
 
 section {
   width: 100%;
-}
-@media only screen and (max-width: 576px) {
-  section {
-    padding: 7.5rem 0 4.5rem;
-  }
-}
-@media (min-width: 577px) and (max-width: 767px) {
-  section {
-    padding: 5.5rem 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  section {
-    padding: 7rem 0;
-  }
-}
-@media (min-width: 991px) and (max-width: 1150px) {
-  section {
-    padding: 8rem 0;
-  }
-}
-@media (min-width: 1151px) {
-  section {
-    padding: 5rem 0;
-  }
+  padding-block: min(10vh, 10rem);
 }
 
 a {
@@ -890,16 +866,8 @@ a:active, a:focus {
   display: none;
 }
 
-@media (min-width: 1151px) {
-  .welcome {
-    padding-top: 10rem !important;
-    padding-bottom: 0;
-  }
-}
-@media (min-width: 991px) and (max-width: 1150px) {
-  .welcome {
-    padding: 8rem 0 4rem;
-  }
+.welcome {
+  padding-bottom: 0;
 }
 @media only screen and (max-width: 576px) {
   .welcome {
@@ -921,28 +889,12 @@ a:active, a:focus {
 }
 .welcome__program {
   width: 100%;
-  padding-top: 18rem;
-  padding-bottom: 4rem;
+  margin-top: 15rem;
   background-image: url("../src/assets/images/program-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% auto;
-}
-@media (min-width: 991px) and (max-width: 1150px) {
-  .welcome__program {
-    padding: 18rem 0 0;
-  }
-}
-@media (min-width: 1000px) {
-  .welcome__program {
-    padding-bottom: 10rem;
-  }
-}
-@media (max-width: 1220px) {
-  .welcome__program {
-    padding: 14rem 0 0;
-  }
 }
 @media (max-width: 1382px) {
   .welcome__program {
@@ -1055,29 +1007,17 @@ a:active, a:focus {
 .project-saudi {
   background-color: #efefef;
 }
-@media (min-width: 1151px) {
-  .project-saudi {
-    padding-top: 5.5rem !important;
-  }
-}
 @media (min-width: 991px) and (max-width: 1150px) {
   .project-saudi {
-    padding: 3rem 0 !important;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .project-saudi {
-    padding: 0.5rem 0 4.5rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
   .project-saudi {
-    padding: 3rem 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -1085,14 +1025,8 @@ a:active, a:focus {
     box-shadow: none;
   }
 }
-@media (min-width: 577px) and (max-width: 767px) {
-  .project-saudi {
-    padding: 3.5rem 0;
-  }
-}
 @media (max-width: 600px) {
   .project-saudi {
-    padding: 3.5rem 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -1278,31 +1212,6 @@ a:active, a:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 1151px) {
-  .project-turkey {
-    padding-top: 5.5rem !important;
-  }
-}
-@media (min-width: 991px) and (max-width: 1150px) {
-  .project-turkey {
-    padding: 3rem 0 !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .project-turkey {
-    padding: 3rem 0;
-  }
-}
-@media (min-width: 577px) and (max-width: 767px) {
-  .project-turkey {
-    padding: 3.5rem 0;
-  }
-}
-@media (max-width: 600px) {
-  .project-turkey {
-    padding: 3.5rem 0;
-  }
-}
 .project-turkey .container {
   position: relative;
 }
@@ -1462,29 +1371,17 @@ a:active, a:focus {
 .project-dubai {
   background-color: #efefef;
 }
-@media (min-width: 1151px) {
-  .project-dubai {
-    padding-top: 5.5rem !important;
-  }
-}
 @media (min-width: 991px) and (max-width: 1150px) {
   .project-dubai {
-    padding: 3rem 0 !important;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .project-dubai {
-    padding: 3.5rem 0 4.5rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
   .project-dubai {
-    padding: 3rem 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -1492,14 +1389,8 @@ a:active, a:focus {
     box-shadow: none;
   }
 }
-@media (min-width: 577px) and (max-width: 767px) {
-  .project-dubai {
-    padding: 3.5rem 0;
-  }
-}
 @media (max-width: 600px) {
   .project-dubai {
-    padding: 3.5rem 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -2032,30 +1923,21 @@ a:active, a:focus {
 }
 @media (min-width: 1151px) {
   .application {
-    padding-top: 5.5rem !important;
     margin-top: 15rem;
   }
 }
 @media (min-width: 991px) and (max-width: 1150px) {
   .application {
-    padding: 5rem 0 !important;
     margin-top: 10rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .application {
-    padding: 3rem 0;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
   .application {
-    padding: 5rem 0;
     margin-top: 4rem;
   }
 }
 @media (max-width: 600px) {
   .application {
-    padding: 3.5rem 0;
     padding-bottom: 7rem;
     margin-top: 3rem !important;
   }
@@ -2385,7 +2267,7 @@ a:active, a:focus {
 }
 @media only screen and (max-width: 576px) {
   .info__contacts__content__item__link-desc {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
   }
 }
 
