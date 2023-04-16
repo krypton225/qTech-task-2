@@ -1921,14 +1921,9 @@ a:active, a:focus {
     margin-top: 0;
   }
 }
-@media (min-width: 1151px) {
+@media (min-width: 991px) {
   .application {
-    margin-top: 15rem;
-  }
-}
-@media (min-width: 991px) and (max-width: 1150px) {
-  .application {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
