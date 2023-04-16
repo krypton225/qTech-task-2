@@ -127,6 +127,10 @@ a:active, a:focus {
   }
 }
 
+.disable-scroll {
+  overflow-y: hidden;
+}
+
 .btn {
   width: 100%;
   position: relative;
