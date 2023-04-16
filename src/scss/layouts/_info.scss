@@ -1,6 +1,5 @@
 .info {
     width: 100%;
-    // padding-block: min(5vh, 10rem);
 
     &__logo {
         margin-top: 5rem;
@@ -60,7 +59,7 @@
                     margin-left: 1.2rem;
 
                     @include breakpoint(tablet) {
-                        margin-left: 0.32rem;
+                        margin-left: 1rem;
                     }
 
                     &:nth-child(1) {
@@ -108,7 +107,7 @@
                         }
 
                         @include breakpoint(mobile) {
-                            font-size: 1.45rem;
+                            font-size: 1.35rem;
                         }
                     }
                 }
